@@ -1,0 +1,16 @@
+@import "../globals/global.scss";
+
+
+.p1 {
+    
+  @include font-XL-R;  // 믹스인 사용
+}
+
+.p2 {
+    
+  @include font-L-R;  // 믹스인 사용
+}
+
+.p3 {
+    @include font-XL-R;  // 믹스인 사용
+}

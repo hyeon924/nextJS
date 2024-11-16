@@ -1,0 +1,10 @@
+@import '../globals/font-mixin.scss';
+
+/* styles/header.module.scss */
+.header {
+  background-color: var(--background);
+  color: rgb(216, 38, 38);
+  padding: 20px;
+  border: 1px solid black;
+  @include font-XXS-B;  // 믹스인 사용
+}
