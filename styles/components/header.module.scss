@@ -12,9 +12,24 @@
 
 .nav {
   width: auto;
-  height: 100%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.nav a {
+  margin-left: 12px;
+}
+
+.nav span {
+  @include font-XS-B; // 믹스인 사용
+  color: var(--text-black);
+}
+
+.nav span:hover {
+  border-bottom: 2px solid var(--text-secondary-color);
 }
 
 .active {
-  color: red;  // 활성화된 링크에 스타일을 적용
+  color: var(--text-secondary-color) !important; // 활성화된 링크에 스타일을 적용
+  border-bottom: 2px solid var(--text-secondary-color);
 }

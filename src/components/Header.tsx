@@ -5,6 +5,8 @@ import React from 'react';
 import { usePathname } from 'next/navigation'; // 'next/navigation'에서 usePathname 사용
 import Link from 'next/link';
 import styles from '@/styles/components/header.module.scss';
+import LinkButton from './button/LinkButton';
+import SubmitButton from './button/SubmitButton';
 
 const Header: React.FC = () => {
   const pathname = usePathname(); // 현재 경로를 확인하기 위해 usePathname 사용
@@ -33,6 +35,9 @@ const Header: React.FC = () => {
           <span className={isActive('/mantor/form') ? styles.active : ''}>멘토신청</span>
         </Link>
       </nav>
+      <LinkButton to="/about">login</LinkButton>
+
+
     </header>
   );
 };
