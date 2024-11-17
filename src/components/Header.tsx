@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation'; // 'next/navigation'에서 usePat
 import Link from 'next/link';
 import styles from '@/styles/components/header.module.scss';
 import LinkButton from './button/LinkButton';
-import SubmitButton from './button/SubmitButton';
 
 const Header: React.FC = () => {
   const pathname = usePathname(); // 현재 경로를 확인하기 위해 usePathname 사용
@@ -38,8 +37,6 @@ const Header: React.FC = () => {
         </nav>
         <LinkButton to="/member">Login</LinkButton>
       </div>
-
-
     </header>
   );
 };
