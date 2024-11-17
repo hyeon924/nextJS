@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 // src/app/layout.js
 import '@/styles/main.scss';
-import Header from '../components/Header';
+import Header from '@/src/components/Header';
+import Footer from '@/src/components/Footer';
 
 
 
@@ -19,8 +20,10 @@ export default function RootLayout({
     <html lang="ko">
       <body>
         <Header />
-        {children}
-        {/* <Footer /> */}
+        <div className="contentArea">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

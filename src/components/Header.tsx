@@ -18,24 +18,26 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <Link href="/">LOGO</Link>
 
-      <nav className={styles.nav}>
-        <Link href="/about">
-          <span className={isActive('/about') ? styles.active : ''}>토티블록</span>
-        </Link>
-        <Link href="/post">
-          <span className={isActive('/post') ? styles.active : ''}>블로그</span>
-        </Link>
-        <Link href="/qna">
-          <span className={isActive('/qna') ? styles.active : ''}>질문답변</span>
-        </Link>
-        <Link href="/mantor">
-          <span className={isActive('/mantor') ? styles.active : ''}>멘토찾기</span>
-        </Link>
-        <Link href="/mantor/form">
-          <span className={isActive('/mantor/form') ? styles.active : ''}>멘토신청</span>
-        </Link>
-      </nav>
-      <LinkButton to="/about">login</LinkButton>
+      <div className={styles.navSection}>
+        <nav className={styles.nav}>
+          <Link href="/about">
+            <span className={isActive('/about') ? styles.active : ''}>토티블록</span>
+          </Link>
+          <Link href="/post">
+            <span className={isActive('/post') ? styles.active : ''}>블로그</span>
+          </Link>
+          <Link href="/qna">
+            <span className={isActive('/qna') ? styles.active : ''}>질문답변</span>
+          </Link>
+          <Link href="/mantor">
+            <span className={isActive('/mantor') ? styles.active : ''}>멘토찾기</span>
+          </Link>
+          <Link href="/mantor/form">
+            <span className={isActive('/mantor/form') ? styles.active : ''}>멘토신청</span>
+          </Link>
+        </nav>
+        <LinkButton to="/member">Login</LinkButton>
+      </div>
 
 
     </header>

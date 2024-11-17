@@ -41,11 +41,19 @@ footer, header, hgroup, menu, nav, section {
 
 html {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 }
 
 body {
+	height: 100%;
 	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto; /* 내용이 넘치면 스크롤이 생기도록 설정 */
+}
+
+.contentArea {
+	flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
 }
 
 ol, ul {

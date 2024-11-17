@@ -20,7 +20,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],  // src 폴더에 대한 절대 경로 설정
-      "@/styles/*": ["./styles/*"]  // styles 폴더에 대한 절대 경로 설정
+      "@/styles/*": ["./styles/*"],  // styles 폴더에 대한 절대 경로 설정
+      "@/src/components/*": ["./src/components/*"]  
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
