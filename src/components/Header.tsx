@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           </Link>
           <Link href="/post">
             <span className={isActive('/post') ? styles.active : ''}>블로그</span>
-          </Link>
+          </Link> 
           <Link href="/qna">
             <span className={isActive('/qna') ? styles.active : ''}>질문답변</span>
           </Link>

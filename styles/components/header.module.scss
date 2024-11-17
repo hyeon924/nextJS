@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid var(--gray-400);
 }
 
 .navSection {
@@ -27,10 +28,10 @@
 .nav span {
   @include font-XS-B;
   color: var(--text-black);
-}
 
-.nav span:hover {
-  border-bottom: 2px solid var(--text-secondary-color);
+  &:hover {
+    border-bottom: 2px solid var(--text-secondary-color);
+  }
 }
 
 .active {
